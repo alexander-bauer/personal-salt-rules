@@ -4,3 +4,4 @@ base:
     - login
   'mosaic.*':
     - devel
+    - graphics
