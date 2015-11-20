@@ -1,13 +1,18 @@
-sasha:
-  group.present:
-    - gid: 1000
+{% if 'admins' in pillar %}
+{% for admin, attributes in pillar.admins.items() %}
+admin_{{admin}}:
   user.present:
-    - uid: 1000
+    - name: {{admin}}
+    - enforce_password: true
+    - remove_groups: false
+    {% for attrname, attr in attributes.items() %}
+    - {{attrname}}: {{attr}}
     - groups:
-      - sasha
+      - {{admin}}
       - wheel
-    - require:
-      - group: sasha
+    {% endfor %}
+{% endfor %}
+{% endif %}
 
 sudo:
   pkg.installed: []
