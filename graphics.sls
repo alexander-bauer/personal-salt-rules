@@ -1,3 +1,8 @@
+touchpad-drivers:
+  pkg.installed:
+    - pkgs:
+      - xf86-input-synaptics
+
 X-packages:
   pkg.installed:
     - pkgs:
