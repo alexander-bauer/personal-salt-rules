@@ -8,3 +8,4 @@ base:
     - web
     - aur
     - wireless
+    - printing
