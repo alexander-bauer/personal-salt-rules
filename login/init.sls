@@ -16,11 +16,13 @@ admin_{{admin}}:
 
 sudo:
   pkg.installed: []
-  file.line:
+  file.managed:
     - name: /etc/sudoers
-    - mode: ensure
+    - source: salt://login/sudoers
+sudo_wheel:
+  file.managed:
+    - name: /etc/sudoers.d/wheel
     - content: '%wheel ALL=(ALL) ALL'
-    - after: root ALL=(ALL) ALL
 
 ssh:
   pkg.installed:

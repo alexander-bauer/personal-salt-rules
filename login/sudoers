@@ -1,0 +1,6 @@
+# Allow root to sudo as anyone.
+root ALL=(ALL) ALL
+
+# Include all files in /etc/sudoers.d.
+# Note that #includedir IS NOT A COMMENT
+#includedir /etc/sudoers.d
