@@ -7,3 +7,4 @@ base:
     - graphics
     - web
     - aur
+    - wireless
