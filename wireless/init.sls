@@ -1,6 +1,9 @@
 wpa_supplicant:
   pkg.installed: []
 
+rfkill:
+  pkg.installed: []
+
 {% if 'wireless_interfaces' in pillar %}
 {% for iface in pillar.wireless_interfaces %}
 wpa_supplicant_{{iface}}:
