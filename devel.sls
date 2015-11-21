@@ -13,6 +13,11 @@ terminal:
     - pkgs:
       - xfce4-terminal
 
+shell:
+  pkg.latest:
+    - pkgs:
+      - zsh
+
 texlive:
   pkg.latest:
     - pkgs:
