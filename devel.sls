@@ -7,3 +7,8 @@ editors:
   pkg.latest:
     - pkgs:
       - vim
+
+terminal:
+  pkg.latest:
+    - pkgs:
+      - xfce4-terminal
