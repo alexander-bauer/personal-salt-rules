@@ -12,3 +12,8 @@ terminal:
   pkg.latest:
     - pkgs:
       - xfce4-terminal
+
+texlive:
+  pkg.latest:
+    - pkgs:
+      - texlive-core
