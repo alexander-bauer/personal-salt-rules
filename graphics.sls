@@ -4,6 +4,11 @@ X-packages:
       - xorg-server
       - xorg-xinit
 
+fonts:
+  pkg.installed:
+    - pkgs:
+      - ttf-inconsolata
+
 display-manager:
   pkg.installed:
     - pkgs:
