@@ -7,6 +7,7 @@ editors:
   pkg.latest:
     - pkgs:
       - vim
+      - vim-latexsuite
 
 terminal:
   pkg.latest:
@@ -18,6 +19,14 @@ shell:
     - pkgs:
       - zsh
       - zsh-syntax-highlighting
+
+python:
+  pkg.latest: []
+
+haskell:
+  pkg.latest:
+    - pkgs:
+      - ghc
 
 texlive:
   pkg.latest:
