@@ -17,6 +17,7 @@ shell:
   pkg.latest:
     - pkgs:
       - zsh
+      - zsh-syntax-highlighting
 
 texlive:
   pkg.latest:
