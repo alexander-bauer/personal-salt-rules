@@ -4,6 +4,8 @@ X-packages:
       - xorg-server
       - xorg-xinit
       - xorg-xset
+      - xorg-xbacklight
+      - xbindkeys
 
 fonts:
   pkg.installed:
