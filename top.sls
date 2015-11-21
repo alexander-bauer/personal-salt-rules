@@ -6,3 +6,4 @@ base:
     - devel
     - graphics
     - web
+    - aur
