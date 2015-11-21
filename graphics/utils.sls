@@ -1,0 +1,2 @@
+libreoffice-fresh:
+  pkg.latest: []
