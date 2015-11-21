@@ -5,3 +5,4 @@ base:
   'mosaic.*':
     - devel
     - graphics
+    - web
