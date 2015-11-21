@@ -21,3 +21,12 @@ sudo:
     - mode: ensure
     - content: '%wheel ALL=(ALL) ALL'
     - after: root ALL=(ALL) ALL
+
+ssh:
+  pkg.installed:
+    - name: openssh
+  service.running:
+    - name: sshd
+    - enable: true
+    - require:
+      - pkg: ssh
