@@ -3,6 +3,7 @@ X-packages:
     - pkgs:
       - xorg-server
       - xorg-xinit
+      - xorg-xset
 
 fonts:
   pkg.installed:
