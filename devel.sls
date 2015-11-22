@@ -8,6 +8,7 @@ editors:
     - pkgs:
       - vim
       - vim-latexsuite
+      - vim-surround
 
 terminal:
   pkg.latest:
