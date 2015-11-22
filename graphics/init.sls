@@ -32,5 +32,3 @@ display-manager:
 window-manager:
   pkg.installed:
     - name: awesome
-    - require:
-      - pkg: X-packages

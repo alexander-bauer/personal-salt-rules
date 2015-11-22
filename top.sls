@@ -6,6 +6,7 @@ base:
     - devel
     - graphics
     - graphics.utils
+    - graphics.redshift
     - web
     - aur
     - wireless
