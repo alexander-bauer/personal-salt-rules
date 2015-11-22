@@ -19,6 +19,7 @@ sudo:
   file.managed:
     - name: /etc/sudoers
     - source: salt://login/sudoers
+    - template: jinja
 sudo_wheel:
   file.managed:
     - name: /etc/sudoers.d/wheel

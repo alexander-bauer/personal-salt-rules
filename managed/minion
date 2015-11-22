@@ -1,3 +1,5 @@
+# {{ grains.file_managed_warning }} #
+
 file_client: local
 
 file_roots:
@@ -7,3 +9,6 @@ file_roots:
 pillar_roots:
   base:
     - /etc/salt/pillar
+
+grains:
+  file_managed_warning: 'THIS FILE IS MANAGED BY SALT'

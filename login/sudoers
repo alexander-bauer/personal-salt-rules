@@ -1,3 +1,5 @@
+# {{ grains.file_managed_warning }} #
+
 # Allow root to sudo as anyone.
 root ALL=(ALL) ALL
 

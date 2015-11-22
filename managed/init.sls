@@ -5,3 +5,4 @@ salt-minion:
   file.managed:
     - name: /etc/salt/minion
     - source: salt://managed/minion
+    - template: jinja

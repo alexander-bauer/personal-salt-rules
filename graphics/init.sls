@@ -13,6 +13,7 @@ Xorg-synaptics:
   file.managed:
     - name: /etc/X11/xorg.conf.d/50-synaptics.conf
     - source: salt://graphics/synaptics.conf
+    - template: jinja
 
 fonts:
   pkg.installed:
