@@ -1,16 +1,18 @@
-touchpad-drivers:
-  pkg.installed:
-    - pkgs:
-      - xf86-input-synaptics
-
 X-packages:
   pkg.installed:
     - pkgs:
       - xorg-server
       - xorg-xinit
       - xorg-xset
-      - xorg-xbacklight
-      - xbindkeys
+      - xorg-xbacklight      # backlight utils
+      - xbindkeys            # for key bindings
+      - xf86-input-synaptics # touchpad
+      - xf86-video-intel     # backlight & graphics
+
+Xorg-synaptics:
+  file.managed:
+    - name: /etc/X11/xorg.conf.d/50-synaptics.conf
+    - source: salt://graphics/synaptics.conf
 
 fonts:
   pkg.installed:
