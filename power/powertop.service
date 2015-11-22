@@ -5,3 +5,6 @@ Description=Optimize power settings
 Type=oneshot
 ExecStart=/usr/bin/powertop --auto-tune
 RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
