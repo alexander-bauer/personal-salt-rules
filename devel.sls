@@ -37,5 +37,5 @@ texlive:
 network-tools:
   pkg.latest:
     - pkgs:
-      - dnsutils
+      - bind-tools
       - nmap
