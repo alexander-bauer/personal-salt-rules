@@ -7,6 +7,7 @@ base:
     - graphics
     - graphics.utils
     - graphics.redshift
+    - power.powertop
     - web
     - aur
     - wireless

@@ -1,0 +1,7 @@
+[Unit]
+Description=Optimize power settings
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/powertop --auto-tune
+RemainAfterExit=yes
