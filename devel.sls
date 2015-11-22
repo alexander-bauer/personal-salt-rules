@@ -33,3 +33,9 @@ texlive:
   pkg.latest:
     - pkgs:
       - texlive-core
+
+network-tools:
+  pkg.latest:
+    - pkgs:
+      - dnsutils
+      - nmap
