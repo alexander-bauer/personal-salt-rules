@@ -12,3 +12,5 @@ base:
     - aur
     - wireless
     - printing
+    - chat.jabber
+    - chat.irc
