@@ -8,6 +8,7 @@ X-packages:
       - xbindkeys            # for key bindings
       - xf86-input-synaptics # touchpad
       - xf86-video-intel     # backlight & graphics
+      - libnotify            # for desktop notifications
 
 Xorg-synaptics:
   file.managed:
