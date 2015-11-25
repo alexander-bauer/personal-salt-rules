@@ -7,6 +7,7 @@ base:
     - graphics
     - graphics.utils
     - graphics.redshift
+    - sound
     - power.powertop
     - web
     - aur
