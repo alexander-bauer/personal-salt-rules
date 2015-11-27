@@ -15,3 +15,4 @@ base:
     - printing
     - chat.jabber
     - chat.irc
+    - cjdns
