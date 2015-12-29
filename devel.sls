@@ -9,6 +9,7 @@ editors:
       - vim
       - vim-latexsuite
       - vim-surround
+      - vim-systemd
 
 terminal:
   pkg.latest:
