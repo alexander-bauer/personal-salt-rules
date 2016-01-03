@@ -1,0 +1,8 @@
+[Unit]
+Description=Multi-protocol instant messaging client
+
+[Service]
+ExecStart=/usr/bin/pidgin
+
+[Install]
+WantedBy=default.target
