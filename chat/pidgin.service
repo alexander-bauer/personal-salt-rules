@@ -3,6 +3,8 @@ Description=Multi-protocol instant messaging client
 
 [Service]
 ExecStart=/usr/bin/pidgin
+Restart=on-failure
+RestartSec=1s
 
 [Install]
 WantedBy=default.target
