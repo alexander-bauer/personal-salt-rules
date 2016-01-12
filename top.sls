@@ -2,7 +2,7 @@ base:
   '*':
     - managed
     - login
-  'mosaic.*':
+  'mosaic*':
     - devel
     - graphics
     - graphics.utils
