@@ -1,6 +1,7 @@
 cjdns:
   pkg.installed: []
   service.running:
+    - enable: true
     - require:
       - pkg: cjdns
     - watch:
