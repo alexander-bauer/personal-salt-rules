@@ -1,0 +1,2 @@
+# {{ salt['grains.get']('file_managed_warning') }}
+{{ salt['pillar.get'](content_pillar) | yaml(False) }}

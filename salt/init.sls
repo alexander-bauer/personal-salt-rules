@@ -4,6 +4,7 @@ salt-minion:
       - salt-zmq
   file.managed:
     - name: /etc/salt/minion
-    - content: |
-      # {{ salt['grains.get']('file_managed_warning', '') }}
-      {{ salt['pillar.get']('minion:config', {}) | yaml }}
+    - source: salt://templates/yaml_file
+    - template: jinja
+    - context:
+      content_pillar: 'minion:config'

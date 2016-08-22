@@ -4,9 +4,10 @@ salt-master:
       - salt-zmq
   file.managed:
     - name: /etc/salt/master
-    - contents:
-      # {{ salt['grains.get']('file_managed_warning', '') }}
-      {{ salt['pillar.get']('master:config', {}) | yaml }}
+    - source: salt://templates/yaml_file
+    - template: jinja
+    - context:
+      content_pillar: 'master:config'
 
 salt-master-update-fileserver:
   file.managed:
