@@ -22,3 +22,12 @@ salt-master-update-fileserver:
       content:
         update_fileserver:
           runner.fileserver.update
+  
+{%- if salt['pillar.get']('master:githooks', False) %}
+{%- for repository in salt['pillar.get']('master:githooks:repositories', []) %}
+{{repository}}/hooks/post-receive:
+  file.managed:
+    - source: salt://salt/update_hook.sh
+    - mode: 755
+{%- endfor %}
+{%- endif %}
