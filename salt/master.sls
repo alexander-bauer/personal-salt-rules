@@ -2,6 +2,9 @@ salt-master:
   pkg.latest:
     - pkgs:
       - salt-zmq
+      {%- if 'git' in salt['pillar.get']('master:config:fileserver_backend', []) %}
+      - python2-pygit2
+      {%- endif %}
   file.managed:
     - name: /etc/salt/master
     - source: salt://templates/yaml_file
