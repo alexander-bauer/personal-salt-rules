@@ -4,3 +4,6 @@ base:
 
   'I@role:saltmaster':
     - salt.master
+
+  'I@role:login':
+    - login
