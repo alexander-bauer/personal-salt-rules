@@ -1,2 +1,6 @@
 # {{ salt['grains.get']('file_managed_warning') }}
-{{ salt['pillar.get'](content_pillar) | yaml(False) }}
+{%- set content = salt['pillar.get'](content_pillar)
+    if   content_pillar is defined
+    else content
+%}
+{{ content | yaml(False) }}

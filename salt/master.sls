@@ -13,6 +13,9 @@ salt-master-update-fileserver:
   file.managed:
     - name: /etc/salt/reactor/update_fileserver.sls
     - makedirs: true
-    - contents: |
-      update_fileserver:
-        runner.fileserver.update
+    - source: salt://templates/yaml_file
+    - template: jinja
+    - context:
+      content:
+        update_fileserver:
+          runner.fileserver.update
